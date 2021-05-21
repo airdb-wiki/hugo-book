@@ -15,6 +15,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+
   box-sizing: border-box;
   * {
     box-sizing: inherit;
@@ -79,6 +80,195 @@ ul.pagination {
   max-width: $container-max-width;
   margin: 0 auto;
 }
+
+.app-nav{
+    color: #34495e;
+    font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+    right: 0;
+    border-bottom: 1px solid #eee;
+    position: fixed;
+    background: #fff;
+    height: 30px;
+    box-sizing: content-box;
+    margin: 0;
+    text-align: right;
+    padding: 14px 0;
+    width: 100%;
+    z-index: 10;
+    box-shadow: 0 2px 4px #e1e5e9;
+
+    .app-logo {
+        color: #34495e;
+        font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+        font-size: 15px;
+        letter-spacing: 0;
+        text-align: right;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: none;
+        box-sizing: border-box;
+        position: absolute;
+        display: flex;
+        left: 26px;
+        top: 13px;
+        flex-direction: row;
+        align-items: center;
+        width: 270px;
+        justify-content: space-between;
+
+    }
+
+        .dcloud-logo{
+                font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+                letter-spacing: 0;
+                text-align: right;
+                -webkit-font-smoothing: antialiased;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-text-size-adjust: none;
+                box-sizing: border-box;
+                width: 91px;
+                height: 30px;
+                background-repeat: no-repeat;
+                background-size: 91px 30px;
+                background-image: url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/5a7f902b-21a7-4822-884f-925219eacc4b.png);
+                color: inherit;
+                font-size: 16px;
+                text-decoration: none;
+                transition: color .3s;
+            }
+
+            .uniapp-logo-active{
+                font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+                letter-spacing: 0;
+                text-align: right;
+                -webkit-font-smoothing: antialiased;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-text-size-adjust: none;
+                box-sizing: border-box;
+                border: 0 !important;
+                width: 135px;
+                height: 33px;
+                background-repeat: no-repeat;
+                background-size: 135px 33px;
+                background-image: url(https://vkceyugu.cdn.bspapp.com/VKCEYUGU-f184e7c3-1912-41b2-b81f-435d1b37c7b4/1ae87107-2943-4ba6-be2b-390ca27c6260.png);
+                font-size: 16px;
+                text-decoration: none;
+                transition: color .3s;
+                color: var(--theme-color,#42b983);
+                border-bottom: 2px solid var(--theme-color,#42b983);
+            }
+
+    .app-nav-search{
+        color: #34495e;
+        font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+        font-size: 15px;
+        letter-spacing: 0;
+        text-align: right;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: none;
+        box-sizing: border-box;
+        width: 200px;
+        margin-bottom: 0;
+        padding: 0;
+        border: 0;
+        display: inline-block;
+            .input-wrap{
+                color: #34495e;
+                font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+                font-size: 15px;
+                letter-spacing: 0;
+                text-align: right;
+                -webkit-font-smoothing: antialiased;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-text-size-adjust: none;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                position: relative;
+            }
+
+            .clear-button{
+                color: #34495e;
+                font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+                font-size: 15px;
+                letter-spacing: 0;
+                -webkit-font-smoothing: antialiased;
+                -webkit-tap-highlight-color: rgba(0,0,0,0);
+                -webkit-text-size-adjust: none;
+                box-sizing: border-box;
+                width: 36px;
+                text-align: right;
+                display: none;
+            }
+    }
+}
+
+    .results-panel{
+        color: #34495e;
+        font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+        font-size: 15px;
+        letter-spacing: 0;
+        text-align: right;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: none;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .nav-ul{
+        color: #34495e;
+        font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+        font-size: 15px;
+        letter-spacing: 0;
+        text-align: right;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: none;
+        box-sizing: border-box;
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+    .nav-href{
+        color: #34495e;
+        font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+        font-size: 15px;
+        letter-spacing: 0;
+        text-align: right;
+        -webkit-font-smoothing: antialiased;
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+        -webkit-text-size-adjust: none;
+        box-sizing: border-box;
+        position: relative;
+        display: inline-block;
+        list-style: none;
+        margin: 0;
+        padding: 0 10px;
+    }
+
+.github{
+    color: #34495e;
+    font-family: Source Sans Pro,Helvetica Neue,Arial,sans-serif;
+    font-size: 15px;
+    letter-spacing: 0;
+    text-align: right;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-text-size-adjust: none;
+    box-sizing: border-box;
+    display: inline-block;
+    padding-right: 10px;
+}
+
 
 .book-icon {
   filter: var(--icon-filter);
