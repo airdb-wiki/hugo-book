@@ -30,6 +30,16 @@
 <script defer src="{{ $swJS.RelPermalink }}" integrity="{{ $swJS.Data.Integrity }}"></script>
 {{ end -}}
 
+<link rel="apple-touch-icon" sizes="128x128" href="128x128.jpg">
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?65e05e8c0631a0d2802629f8ceb31fee";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 {{- template "_internal/google_analytics_async.html" . -}}
 
 <!-- RSS -->
@@ -37,7 +47,12 @@
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
 {{ end -}}
 
+
+<div align="center" }>
+    <marquee direction="left">Welcome to Join US.</marquee>
+</div>
+
 {{ "<!--" | safeHTML }}
 Made with Book Theme
-https://github.com/alex-shpak/hugo-book
+https://github.com/airdb-wiki/hugo-book
 {{ "-->" | safeHTML }}
