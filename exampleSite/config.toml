@@ -40,7 +40,7 @@ enableGitInfo = true
 # [[menu.before]]
 [[menu.after]]
   name = "Github"
-  url = "https://github.com/alex-shpak/hugo-book"
+  url = "https://github.com/airdb-wiki/hugo-book"
   weight = 10
 
 [[menu.after]]
@@ -49,10 +49,6 @@ enableGitInfo = true
   weight = 20
 
 [params]
-  # (Optional, default light) Sets color theme: light, dark or auto.
-  # Theme 'auto' switches between dark and light modes based on browser/os preferences
-  BookTheme = 'light'
-
   # (Optional, default true) Controls table of contents visibility on right side of pages.
   # Start and end levels can be controlled with markup.tableOfContents setting.
   # You can also specify this parameter per page in front matter.
@@ -73,14 +69,7 @@ enableGitInfo = true
 
   # Set source repository location.
   # Used for 'Last Modified' and 'Edit this page' links.
-  BookRepo = 'https://github.com/alex-shpak/hugo-book'
-
-  # (Optional, default 'commit') Specifies commit portion of the link to the page's last modified
-  # commit hash for 'doc' page type.
-  # Requires 'BookRepo' param.
-  # Value used to construct a URL consisting of BookRepo/BookCommitPath/<commit-hash>
-  # Github uses 'commit', Bitbucket uses 'commits'
-  # BookCommitPath = 'commit'
+  BookRepo = 'https://github.com/airdb-wiki/hugo-book'
 
   # Enable "Edit this page" links for 'doc' page type.
   # Disabled by default. Uncomment to enable. Requires 'BookRepo' param.
@@ -90,7 +79,9 @@ enableGitInfo = true
   # Configure the date format used on the pages
   # - In git information
   # - In blog posts
-  BookDateFormat = 'January 2, 2006'
+  # BookDateFormat = 'January 2, 2006'
+  # https://gohugo.io/functions/format/
+  BookDateFormat = 'Mon Jan 2 15:04:05 MST 2006'
 
   # (Optional, default true) Enables search function with flexsearch,
   # Index is built on fly, therefore it might slowdown your website.
@@ -112,7 +103,3 @@ enableGitInfo = true
   # /!\ This is an experimental feature, might be removed or changed at any time
   # (Optional, experimental, default false) Enables service worker that caches visited pages and resources for offline use.
   BookServiceWorker = true
-
-  # /!\ This is an experimental feature, might be removed or changed at any time
-  # (Optional, experimental, default false) Enables a drop-down menu for translations only if a translation is present.
-  BookTranslatedOnly = false
