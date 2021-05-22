@@ -2,56 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/hugo-book/ru/categories/</loc>
+    <loc>https://airdb.dev/hugo-book/ru/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/hugo-book/categories/"
+                href="https://airdb.dev/hugo-book/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://example.com/hugo-book/zh/categories/"
+                href="https://airdb.dev/hugo-book/zh/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/hugo-book/ru/categories/"
+                href="https://airdb.dev/hugo-book/ru/categories/"
                 />
   </url><url>
-    <loc>https://example.com/hugo-book/ru/tags/</loc>
+    <loc>https://airdb.dev/hugo-book/ru/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/hugo-book/tags/"
+                href="https://airdb.dev/hugo-book/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://example.com/hugo-book/zh/tags/"
+                href="https://airdb.dev/hugo-book/zh/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/hugo-book/ru/tags/"
+                href="https://airdb.dev/hugo-book/ru/tags/"
                 />
   </url><url>
-    <loc>https://example.com/hugo-book/ru/</loc>
+    <loc>https://airdb.dev/hugo-book/ru/</loc>
     <lastmod>2019-11-19T23:56:45+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://example.com/hugo-book/"
+                href="https://airdb.dev/hugo-book/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="zh"
-                href="https://example.com/hugo-book/zh/"
+                href="https://airdb.dev/hugo-book/zh/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="ru"
-                href="https://example.com/hugo-book/ru/"
+                href="https://airdb.dev/hugo-book/ru/"
                 />
   </url>
 </urlset>
