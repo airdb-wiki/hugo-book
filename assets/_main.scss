@@ -722,3 +722,45 @@ body.close .app-nav.no-badge {
 .app-nav.no-badge {
         padding: 14px 0
 }
+
+.app-nav {
+  a {
+    color: inherit;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color .3s;
+  }
+  .nav-url, .nav-href {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    li:hover ul {
+      display:block
+    }
+    li {
+      display: inline-block;
+      list-style: none;
+      margin: 0 1rem;
+      padding: 5px 0;
+      position: relative;
+
+      ul {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-bottom-color: rgb(221, 221, 221);
+        border-bottom-color: #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        display: none;
+        max-height: calc(100vh - 61px);
+        overflow-y: auto;
+        padding: 10px 0;
+        position: absolute;
+        right: -15px;
+        text-align: left;
+        top: 100%;
+        white-space: nowrap;
+      }
+    }
+  }
+}
