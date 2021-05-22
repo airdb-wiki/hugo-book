@@ -28,15 +28,18 @@ hugo提供了通过主题构建网站的机制。hugo生态已经提供了300+�
 mkdir -p ${project}/themes
 cd ${project}
 
+git init
 git submodule add --force  https://github.com/airdb-wiki/hugo-book  themes/book
 
-cp exampleSite/ .
+cp -pr themes/book/exampleSite/ .
+
+git add  .
+git commit -a -m"first commit"
 
 hugo server --minify --theme book
 ```
 
-## Build
-
+## Makefile
 
 ```bash
 .PHONY: test
