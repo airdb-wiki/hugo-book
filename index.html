@@ -5,7 +5,7 @@
   <meta name="generator" content="Hugo 0.83.1" />
   <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Hugo Wiki #  简单 Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。 hugo提供了通过主题构建网站的机制。hugo生态已经提供了300&#43;的主题可以用。  易用 主题类似一种前端框架，可以帮助我们快速建站。 此项目是基于 Hugo-book 进行的二次开发，此 hugo 主题 主要用户网站建设和文档建设。 只需导入作为 hugo themes 即可生效, 使用非常简单。   Quick Start #  mkdir -p ${project}/themes cd ${project} git submodule add --force https://github.com/airdb-wiki/hugo-book themes/book cp exampleSite/ . hugo server --minify --theme book Build #  .PHONY: test all: run run: hugo server --minify --theme book sub: git submodule update --init git submodule update --remote build: hugo -D --minify ">
+<meta name="description" content="Hugo Wiki #  简单 Hugo 是由 Go 语言实现的静态网站生成器。简单、易用、高效、易扩展、快速部署。 hugo提供了通过主题构建网站的机制。hugo生态已经提供了300&#43;的主题可以用。  易用 主题类似一种前端框架，可以帮助我们快速建站。 此项目是基于 Hugo-book 进行的二次开发，此 hugo 主题 主要用户网站建设和文档建设。 只需导入作为 hugo themes 即可生效, 使用非常简单。   Quick Start #  mkdir -p ${project}/themes cd ${project} git init git submodule add --force https://github.com/airdb-wiki/hugo-book themes/book cp -pr themes/book/exampleSite/ . git add . git commit -a -m&#34;first commit&#34; hugo server --minify --theme book Makefile #  .PHONY: test all: run run: hugo server --minify --theme book sub: git submodule update --init git submodule update --remote build: hugo -D --minify ">
 <meta name="theme-color" content="#FFFFFF"><meta property="og:title" content="简介" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
@@ -453,7 +453,7 @@ https://github.com/airdb-wiki/hugo-book
     <li><a href="#hugo-wiki">Hugo Wiki</a>
       <ul>
         <li><a href="#quick-start">Quick Start</a></li>
-        <li><a href="#build">Build</a></li>
+        <li><a href="#makefile">Makefile</a></li>
       </ul>
     </li>
   </ul>
@@ -496,14 +496,18 @@ hugo提供了通过主题构建网站的机制。hugo生态已经提供了300+�
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">mkdir -p <span style="color:#e6db74">${</span>project<span style="color:#e6db74">}</span>/themes
 cd <span style="color:#e6db74">${</span>project<span style="color:#e6db74">}</span>
 
+git init
 git submodule add --force  https://github.com/airdb-wiki/hugo-book  themes/book
 
-cp exampleSite/ .
+cp -pr themes/book/exampleSite/ .
+
+git add  .
+git commit -a -m<span style="color:#e6db74">&#34;first commit&#34;</span>
 
 hugo server --minify --theme book
-</code></pre></div><h2 id="build">
-  Build
-  <a class="anchor" href="#build">#</a>
+</code></pre></div><h2 id="makefile">
+  Makefile
+  <a class="anchor" href="#makefile">#</a>
 </h2>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">.PHONY: test
 
@@ -578,9 +582,9 @@ build:
 
 
 
-  <div><a class="flex align-center" href="https://github.com/airdb-wiki/hugo-book/commit/0830ba05e79b1c3e210c3bd984ff4a696c3e1a6a" title='Last modified by deancn | Sat May 22 13:53:03 UTC 2021' target="_blank" rel="noopener">
+  <div><a class="flex align-center" href="https://github.com/airdb-wiki/hugo-book/commit/0d9c2fcd7f9676eb748d8ee746a211bb7cecd4e2" title='Last modified by deancn | Sat May 22 13:58:17 UTC 2021' target="_blank" rel="noopener">
       <img src="/hugo-book/svg/calendar.svg" class="book-icon" alt="Calendar" />
-      <span>Sat May 22 13:53:03 UTC 2021</span>
+      <span>Sat May 22 13:58:17 UTC 2021</span>
     </a>
   </div>
 
@@ -620,7 +624,7 @@ build:
     <li><a href="#hugo-wiki">Hugo Wiki</a>
       <ul>
         <li><a href="#quick-start">Quick Start</a></li>
-        <li><a href="#build">Build</a></li>
+        <li><a href="#makefile">Makefile</a></li>
       </ul>
     </li>
   </ul>
