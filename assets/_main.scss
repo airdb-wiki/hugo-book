@@ -215,7 +215,7 @@ ul.pagination {
 }
 
 .book-toc {
-  flex: 0 0 $toc-width;
+  flex: 0 0 0 $toc-width - 12;
   font-size: $font-size-12;
 
   .book-toc-content {
