@@ -1,6 +1,10 @@
+# https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions
 name: Build with Hugo
 
-on: [push]
+on:
+  push:
+    branches:
+      - dev
 
 jobs:
   build:
