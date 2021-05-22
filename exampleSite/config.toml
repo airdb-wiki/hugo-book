@@ -49,14 +49,20 @@ enableGitInfo = true
   weight = 21
 
 [[menu.before]]
-  name = "app"
+  name = "组件"
   url = "https://themes.gohugo.io/hugo-book/"
   weight = 22
+
+
+[[menu.before]]
+  name = "APIs"
+  url = "https://themes.gohugo.io/hugo-book/"
+  weight = 32
 
 [[menu.before]]
   name = "其他规范"
   url = "https://themes.gohugo.io/hugo-book/"
-  weight = 23
+  weight = 43
 
 [[menu.after ]]
   name = "插件市场"
