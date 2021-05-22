@@ -38,15 +38,36 @@ enableGitInfo = true
 
 [menu]
 # [[menu.before]]
-[[menu.after]]
+[[menu.before]]
   name = "Github"
   url = "https://github.com/airdb-wiki/hugo-book"
   weight = 10
 
-[[menu.after]]
+[[menu.before]]
   name = "Hugo Themes"
   url = "https://themes.gohugo.io/hugo-book/"
+  weight = 21
+
+[[menu.before]]
+  name = "app"
+  url = "https://themes.gohugo.io/hugo-book/"
+  weight = 22
+
+[[menu.before]]
+  name = "其他规范"
+  url = "https://themes.gohugo.io/hugo-book/"
+  weight = 23
+
+[[menu.after ]]
+  name = "插件市场"
+  url = "https://themes.gohugo.io/hugo-book/"
+  weight = 10
+
+[[menu.after ]]
+  name = "需求墙"
+  url = "https://github.com/airdb-wiki/hugo-book"
   weight = 20
+
 
 [params]
   # (Optional, default true) Controls table of contents visibility on right side of pages.
