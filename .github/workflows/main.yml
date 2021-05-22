@@ -20,3 +20,10 @@ jobs:
       - name: Run Hugo
         working-directory: exampleSite
         run: hugo --themesDir ../..
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/main'
+        with:
+          github_token: ${{ secrets.GithubBotToken }}
+          publish_dir: ./public

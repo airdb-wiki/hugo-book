@@ -39,12 +39,12 @@ enableGitInfo = true
 [menu]
 # [[menu.before]]
 [[menu.before]]
-  name = "Github"
+  name = "介绍"
   url = "https://github.com/airdb-wiki/hugo-book"
   weight = 10
 
 [[menu.before]]
-  name = "Hugo Themes"
+  name = "框架"
   url = "https://themes.gohugo.io/hugo-book/"
   weight = 21
 
