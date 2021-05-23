@@ -27,21 +27,21 @@ enableGitInfo = true
   weight = 1
 
 [menu]
-# [[menu.before]]
 [[menu.before]]
-  name = "初始化"
-  url = "/wiki/osinit/"
+  name = "介绍"
+  url = "https://github.com/airdb-wiki/hugo-book"
   weight = 10
 
 [[menu.before]]
-  name = "开发手册"
-  url = "/wiki/dev/github/"
+  name = "框架"
+  url = "https://themes.gohugo.io/hugo-book/"
   weight = 21
 
 [[menu.before]]
-  name = "云原生"
-  url = "/wiki/kube/"
+  name = "组件"
+  url = "https://themes.gohugo.io/hugo-book/"
   weight = 22
+
 
 [[menu.before]]
   name = "APIs"
@@ -50,19 +50,18 @@ enableGitInfo = true
 
 [[menu.before]]
   name = "其他规范"
-  url = "/wiki/dev/coding-style/"
+  url = "https://themes.gohugo.io/hugo-book/"
   weight = 43
 
 [[menu.after ]]
-  name = "技术公益"
-  url = "https://airdb.io/howto/"
+  name = "插件市场"
+  url = "https://themes.gohugo.io/hugo-book/"
   weight = 10
 
 [[menu.after ]]
   name = "需求墙"
   url = "https://github.com/airdb-wiki/hugo-book"
   weight = 20
-
 
 [params]
   # (Optional, default true) Controls table of contents visibility on right side of pages.
