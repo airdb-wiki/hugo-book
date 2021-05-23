@@ -8,7 +8,6 @@ theme = 'hugo-book'
 #theme = "book"
 googleAnalytics = "UA-133539351-1"
 enableEmoji = true
-enableGitInfo = true
 
 
 # Book configuration
