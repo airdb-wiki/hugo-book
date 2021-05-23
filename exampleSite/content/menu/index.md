@@ -2,21 +2,21 @@
 headless: true
 ---
 
-- [**Example Site**]({{< relref "/docs/example" >}})
-- [Table of Contents]({{< relref "/docs/example/table-of-contents" >}})
-  - [With ToC]({{< relref "/docs/example/table-of-contents/with-toc" >}})
-  - [Without ToC]({{< relref "/docs/example/table-of-contents/without-toc" >}})
-- [Collapsed]({{< relref "/docs/example/collapsed" >}})
-  - [3rd]({{< relref "/docs/example/collapsed/3rd-level" >}})
-    - [4th]({{< relref "/docs/example/collapsed/3rd-level/4th-level" >}})
+- [**Example Site**]({{< relref "/wiki/example" >}})
+- [Table of Contents]({{< relref "/wiki/example/table-of-contents" >}})
+  - [With ToC]({{< relref "/wiki/example/table-of-contents/with-toc" >}})
+  - [Without ToC]({{< relref "/wiki/example/table-of-contents/without-toc" >}})
+- [Collapsed]({{< relref "/wiki/example/collapsed" >}})
+  - [3rd]({{< relref "/wiki/example/collapsed/3rd-level" >}})
+    - [4th]({{< relref "/wiki/example/collapsed/3rd-level/4th-level" >}})
 <br />
 
 - **Shortcodes**
-- [Buttons]({{< relref "/docs/shortcodes/buttons" >}})
-- [Columns]({{< relref "/docs/shortcodes/columns" >}})
-- [Expand]({{< relref "/docs/shortcodes/expand" >}})
-- [Hints]({{< relref "/docs/shortcodes/hints" >}})
-- [Katex]({{< relref "/docs/shortcodes/katex" >}})
-- [Mermaid]({{< relref "/docs/shortcodes/mermaid" >}})
-- [Tabs]({{< relref "/docs/shortcodes/tabs" >}})
+- [Buttons]({{< relref "/wiki/shortcodes/buttons" >}})
+- [Columns]({{< relref "/wiki/shortcodes/columns" >}})
+- [Expand]({{< relref "/wiki/shortcodes/expand" >}})
+- [Hints]({{< relref "/wiki/shortcodes/hints" >}})
+- [Katex]({{< relref "/wiki/shortcodes/katex" >}})
+- [Mermaid]({{< relref "/wiki/shortcodes/mermaid" >}})
+- [Tabs]({{< relref "/wiki/shortcodes/tabs" >}})
 <br />
