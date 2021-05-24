@@ -28,8 +28,8 @@ enableGitInfo = true
 
 [menu]
 [[menu.before]]
-  name = "介绍"
-  url = "https://github.com/airdb-wiki/hugo-book"
+  name = "主题首页"
+  url = "https://airdb.dev/hugo-book/"
   weight = 10
 
 [[menu.before]]
