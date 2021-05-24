@@ -2,7 +2,9 @@
 headless: true
 ---
 
-- [**Example Site**]({{< relref "/wiki/example" >}})
+- [**Example Site**]({{< relref "/wiki/" >}})
+<br />
+  
 - [Table of Contents]({{< relref "/wiki/example/table-of-contents" >}})
   - [With ToC]({{< relref "/wiki/example/table-of-contents/with-toc" >}})
   - [Without ToC]({{< relref "/wiki/example/table-of-contents/without-toc" >}})

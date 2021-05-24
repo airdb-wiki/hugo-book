@@ -33,8 +33,8 @@ enableGitInfo = true
   weight = 10
 
 [[menu.before]]
-  name = "框架"
-  url = "https://github.com/airdb-wiki/hugo-book/actions"
+  name = "Hugo 配置"
+  url = "https://gohugo.io/getting-started/configuration"
   weight = 21
 
 [[menu.before]]
@@ -59,8 +59,8 @@ enableGitInfo = true
   weight = 10
 
 [[menu.after ]]
-  name = "需求墙"
-  url = "https://github.com/airdb-wiki/hugo-book"
+  name = "讨论区"
+  url = "https://github.com/airdb-wiki/hugo-book/discussions"
   weight = 20
 
 [params]
