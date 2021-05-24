@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://airdb.dev/hugo-book/wiki/</loc>
+    <lastmod>2021-05-24T18:27:28+08:00</lastmod>
+  </url><url>
     <loc>https://airdb.dev/hugo-book/wiki/example/</loc>
     <lastmod>2021-05-24T02:48:16+08:00</lastmod>
   </url><url>
@@ -106,9 +109,6 @@
   </url><url>
     <loc>https://airdb.dev/hugo-book/posts/</loc>
     <lastmod>2021-05-22T15:07:38+08:00</lastmod>
-  </url><url>
-    <loc>https://airdb.dev/hugo-book/wiki/</loc>
-    <lastmod>2021-05-24T02:48:16+08:00</lastmod>
   </url><url>
     <loc>https://airdb.dev/hugo-book/</loc>
     <lastmod>2021-05-22T21:58:17+08:00</lastmod>
