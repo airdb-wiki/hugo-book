@@ -17,6 +17,7 @@ body {
 
 
   box-sizing: border-box;
+
   * {
     box-sizing: inherit;
   }
@@ -393,335 +394,370 @@ ul.pagination {
   }
 }
 
+@media screen and (max-width: 1000px){
+	.nav-url, .nav-href{
+	display : none !important;
+  	}
+  	
+  	// hugo wiki title
+  	.book-page  .markdown #hugo-wiki{
+	  	margin-top:2.5rem;
+  	}
+  	nav{
+  	
+  		.logo{
+	  		.dcloud-logo{
+	  			display:none;
+	  		}
+	  		.uniapp-logo{
+	  			margin-left:-1.2rem;
+	  			width:9rem;
+	  		}
+	  		
+  		}
+  		.logo::after{
+  			background:none;
+  		}
+  		.search input{
+	  		width: 6rem;
+			margin-left: 5.5rem;
+	  		
+	  	}
+  	}
+}
 
 .search input {
-	height: 32px
+  height: 32px
 }
 
 pre:after {
-	content: ""
+  content: ""
 }
 
-.app-nav.no-badge>ul>li:nth-child(1)>a {
-	border-bottom: 2px solid #42b983;
-	color: #42b983
-}
-[data-page^="/api/"] .app-nav.no-badge>ul>li>a,[data-page^="/collocation/"] .app-nav.no-badge>ul>li>a,[data-page^="/component/"] .app-nav.no-badge>ul>li>a,[data-page^="/uniCloud/"] .app-nav.no-badge>ul>li>a {
-	border: 0;
-	color: #34495e
-}
-[data-page^="/api/"] .app-nav.no-badge>ul>li:nth-child(4)>a,[data-page^="/collocation/"] .app-nav.no-badge>ul>li:nth-child(2)>a,[data-page^="/component/"] .app-nav.no-badge>ul>li:nth-child(3)>a,[data-page^="/uniCloud/"] .app-nav.no-badge>ul>li:nth-child(5)>a {
-	border-bottom: 2px solid #42b983;
-	color: #42b983
+.app-nav.no-badge > ul > li:nth-child(1) > a {
+  border-bottom: 2px solid #42b983;
+  color: #42b983
 }
 
-.app-nav.no-badge {
-	width: calc(100% - 300px);
-	text-align: center;
-	margin-right: 0
+[data-page^="/api/"] .app-nav.no-badge > ul > li > a, [data-page^="/collocation/"] .app-nav.no-badge > ul > li > a, [data-page^="/component/"] .app-nav.no-badge > ul > li > a, [data-page^="/uniCloud/"] .app-nav.no-badge > ul > li > a {
+  border: 0;
+  color: #34495e
 }
 
-.app-nav.no-badge>ul {
-	padding: 0 10px
+[data-page^="/api/"] .app-nav.no-badge > ul > li:nth-child(4) > a, [data-page^="/collocation/"] .app-nav.no-badge > ul > li:nth-child(2) > a, [data-page^="/component/"] .app-nav.no-badge > ul > li:nth-child(3) > a, [data-page^="/uniCloud/"] .app-nav.no-badge > ul > li:nth-child(5) > a {
+  border-bottom: 2px solid #42b983;
+  color: #42b983
 }
 
 .app-nav.no-badge {
-	border-bottom: 1px solid #eee;
-	position: fixed;
-	background: #fff;
-	padding: 9px 0;
-	height: 30px;
-	box-sizing: content-box;
-	margin: 0
+  width: calc(100% - 300px);
+  text-align: center;
+  margin-right: 0
+}
+
+.app-nav.no-badge > ul {
+  padding: 0 10px
+}
+
+.app-nav.no-badge {
+  border-bottom: 1px solid #eee;
+  position: fixed;
+  background: #fff;
+  padding: 9px 0;
+  height: 30px;
+  box-sizing: content-box;
+  margin: 0
 }
 
 .github img {
-	width: 34px;
-	height: 34px;
-	vertical-align: middle
+  width: 34px;
+  height: 34px;
+  vertical-align: middle
 }
 
 .nav-href {
-	position: relative
+  position: relative
 }
 
 .nav-href:before {
-	content: '';
-	position: absolute;
-	left: 0;
-	top: 5px;
-	width: 1px;
-	height: 20px;
-	background-color: #ddd
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 1px;
+  height: 20px;
+  background-color: #ddd
 }
 
 .nav-href a .heart {
-	width: 12px;
-	height: 12px;
-	position: relative;
-	top: 1px;
-	margin-right: 4px
+  width: 12px;
+  height: 12px;
+  position: relative;
+  top: 1px;
+  margin-right: 4px
 }
 
 .nav-href a {
-	border-bottom: none!important;
-	color: inherit!important
+  border-bottom: none !important;
+  color: inherit !important
 }
 
 .nav-href .ext-link {
-	position: relative;
-	margin-right: 28px
+  position: relative;
+  margin-right: 28px
 }
 
 .ext-link:after {
-	content: '';
-	position: absolute;
-	right: -30px;
-	top: 5px;
-	display: inline;
-	font-size: 12px;
-	color: #dc0024
+  content: '';
+  position: absolute;
+  right: -30px;
+  top: 5px;
+  display: inline;
+  font-size: 12px;
+  color: #dc0024
 }
 
 .search p.aw-text {
-	-webkit-margin-before: 0;
-	-webkit-margin-after: 0;
-	display: inline-flex
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  display: inline-flex
 }
 
 .search p.aw-text .aw-text-space {
-	display: inline-block;
-	margin: 0 5px
+  display: inline-block;
+  margin: 0 5px
 }
 
 .search .matching-post {
-	padding: 10px
+  padding: 10px
 }
 
 .search .matching-post h2 {
-	margin-top: 0;
-	padding-top: 0
+  margin-top: 0;
+  padding-top: 0
 }
 
 .sidebar {
-	padding-top: 0
+  padding-top: 0
 }
 
 .search {
-	margin-bottom: 20px;
-	padding: 6px;
-	border-bottom: 1px solid #eee
+  margin-bottom: 20px;
+  padding: 6px;
+  border-bottom: 1px solid #eee
 }
 
 .search.mobile {
-	margin-bottom: 0;
-	padding: 8px 6px
+  margin-bottom: 0;
+  padding: 8px 6px
 }
 
 .search .input-wrap {
-	display: flex;
-	align-items: center
+  display: flex;
+  align-items: center
 }
 
 .search .results-panel {
-	display: none
+  display: none
 }
 
 .search .results-panel.show {
-	display: block
+  display: block
 }
 
 .search input {
-	outline: 0;
-	border: 0;
-	width: 100%;
-	padding: 0 7px;
-	line-height: 36px;
-	font-size: 14px
+  outline: 0;
+  border: 0;
+  width: 100%;
+  padding: 0 7px;
+  line-height: 36px;
+  font-size: 14px
 }
 
-.search input,.search input::-webkit-search-cancel-button,.search input::-webkit-search-decoration {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none
+.search input, .search input::-webkit-search-cancel-button, .search input::-webkit-search-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none
 }
 
 .search .clear-button {
-	width: 36px;
-	text-align: right;
-	display: none
+  width: 36px;
+  text-align: right;
+  display: none
 }
 
 .search .clear-button.show {
-	display: block
+  display: block
 }
 
 .search .clear-button svg {
-	transform: scale(.5)
+  transform: scale(.5)
 }
 
 .search h2 {
-	font-size: 17px;
-	margin: 10px 0
+  font-size: 17px;
+  margin: 10px 0
 }
 
 .search a {
-	text-decoration: none;
-	color: inherit
+  text-decoration: none;
+  color: inherit
 }
 
 .search .matching-post {
-	border-bottom: 1px solid #eee
+  border-bottom: 1px solid #eee
 }
 
 .search .matching-post:last-child {
-	border-bottom: 0
+  border-bottom: 0
 }
 
 .search p {
-	font-size: 14px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 2;
-	-webkit-box-orient: vertical
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical
 }
 
 .search p.empty {
-	text-align: center
+  text-align: center
 }
 
 .search.nav-search {
-	width: 200px;
-	margin-bottom: 0;
-	padding: 0;
-	border: 0;
-	display: inline-block
+  width: 200px;
+  margin-bottom: 0;
+  padding: 0;
+  border: 0;
+  display: inline-block
 }
 
 .search h2 {
-	margin: 0;
-	padding: 0;
-	display: inline-block
+  margin: 0;
+  padding: 0;
+  display: inline-block
 }
 
 .search .matching-post {
-	padding: 15px 0
+  padding: 15px 0
 }
 
 .app-nav.no-badge {
-	text-align: right
+  text-align: right
 }
 
-.app-nav.no-badge~ul {
-	margin-left: 60px
+.app-nav.no-badge ~ ul {
+  margin-left: 60px
 }
 
 .search input {
-	height: 32px;
-	border: 1px solid #eee;
-	border-radius: 15px
+  height: 32px;
+  border: 1px solid #eee;
+  border-radius: 15px
 }
 
 .app-nav p {
-	display: inline-block
+  display: inline-block
 }
 
 div.github {
-	display: inline-block;
-	padding-right: 10px
+  display: inline-block;
+  padding-right: 10px
 }
 
 div.github img {
-	margin-top: -7px
+  margin-top: -7px
 }
 
 
 .search .input-wrap {
-	position: relative
+  position: relative
 }
 
 .search .clear-button.show {
-	position: absolute;
-	display: inline-block;
-	top: 5px;
-	right: 5px
+  position: absolute;
+  display: inline-block;
+  top: 5px;
+  right: 5px
 }
 
 .hide {
-	display: none
+  display: none
 }
 
 .sidebar.pc {
-	top: 59px;
-	padding-top: 24px
+  top: 59px;
+  padding-top: 24px
 }
 
 .app-nav.no-badge.pc {
-	width: 100%;
-	z-index: 10;
-	box-shadow: 0 2px 4px #e1e5e9
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0 2px 4px #e1e5e9
 }
 
 .app-nav .site-name {
-	display: inline-block;
-	position: absolute;
-	left: 24px;
-	vertical-align: middle;
-	font-weight: 500;
-	font-size: 22px
+  display: inline-block;
+  position: absolute;
+  left: 24px;
+  vertical-align: middle;
+  font-weight: 500;
+  font-size: 22px
 }
 
 .logo {
-	position: absolute;
-	display: flex;
-	left: 26px;
-	top: 13px;
-	flex-direction: row;
-	align-items: center;
-	width: 270px;
-	justify-content: space-between
+  position: absolute;
+  display: flex;
+  left: 26px;
+  top: 13px;
+  flex-direction: row;
+  align-items: center;
+  width: 270px;
+  justify-content: space-between
 }
 
 .logo:after {
-	width: 1px;
-	height: 32px;
-	content: "";
-	background-color: #d9d9d9;
-	position: absolute;
-	top: 0;
-	left: 108px
+  width: 1px;
+  height: 32px;
+  content: "";
+  background-color: #d9d9d9;
+  position: absolute;
+  top: 0;
+  left: 108px
 }
 
 .dcloud-logo {
-	width: 91px;
-	height: 32px;
-	background-repeat: no-repeat;
-	background-size: 91px 32px;
-    background-image: url(./svg/airdb-logo.svg)
+  width: 91px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 91px 32px;
+  background-image: url(./svg/airdb-logo.svg)
 }
 
 .uniapp-logo {
-        border: 0!important;
-        width: 140px;
-        height: 32px;
-        background-repeat: no-repeat;
-        background-size: 140px 32px;
-        background-image: url(./svg/airdb-logo.svg)
+  border: 0 !important;
+  width: 140px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: 140px 32px;
+  background-image: url(./svg/airdb-logo.svg)
 }
-[data-page="/casecode.md"] .markdown-section li>a,[data-page="/casecode.md"] .markdown-section p>a {
-        text-decoration: none
+
+[data-page="/casecode.md"] .markdown-section li > a, [data-page="/casecode.md"] .markdown-section p > a {
+  text-decoration: none
 }
-[data-page="/casecode.md"] .markdown-section li>a:hover,[data-page="/casecode.md"] .markdown-section p>a:hover {
-        border-bottom: 1px solid
+
+[data-page="/casecode.md"] .markdown-section li > a:hover, [data-page="/casecode.md"] .markdown-section p > a:hover {
+  border-bottom: 1px solid
 }
 
 body.close .app-nav.no-badge {
-        width: 100%
+  width: 100%
 }
 
 .app-nav.no-badge {
-        padding: 14px 0
+  padding: 14px 0
 }
 
 .app-nav {
@@ -731,13 +767,16 @@ body.close .app-nav.no-badge {
     text-decoration: none;
     transition: color .3s;
   }
+
   .nav-url, .nav-href {
     display: inline-block;
     list-style: none;
     margin: 0;
+
     li:hover ul {
-      display:block
+      display: block
     }
+
     li {
       display: inline-block;
       list-style: none;
