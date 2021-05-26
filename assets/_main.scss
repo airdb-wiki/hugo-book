@@ -394,17 +394,18 @@ ul.pagination {
   }
 }
 
+// mobile
 @media screen and (max-width: 1000px){
 	.nav-url, .nav-href{
 	display : none !important;
   	}
   	
   	// hugo wiki title
-  	.book-page  .markdown #hugo-wiki{
-	  	margin-top:2.5rem;
-  	}
+  	//.book-page  .markdown #hugo-wiki{
+	// 	margin-top:2.5rem;
+  	//}
   	nav{
-  	
+  
   		.logo{
 	  		.dcloud-logo{
 	  			display:none;
@@ -423,7 +424,12 @@ ul.pagination {
 			margin-left: 5.5rem;
 	  		
 	  	}
+	  
   	}
+  	.book-page header{
+	  		margin-top: 3em;
+	
+	}
 }
 
 .search input {
