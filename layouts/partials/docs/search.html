@@ -1,7 +1,8 @@
 {{ if default true .Site.Params.BookSearch }}
     <div class="search nav-search">
-        <div class="input-wrap">
+        <div class="input-wrap search">
             <input type="search" id="book-search-input" placeholder="{{ i18n "Search" }}" aria-label="{{ i18n "Search" }}" maxlength="64" data-hotkeys="s/" />
+            <ul id="book-search-results"></ul>
             <div class="clear-button">
                 <svg width="26" height="24">
                     <circle cx="12" cy="12" r="11" fill="#ccc"></circle>
@@ -14,11 +15,10 @@
         <div class="results-panel"></div>
     </div>
 
-<!--
-<div class="book-search">
-  <input type="text" id="book-search-input" placeholder="{{ i18n "Search" }}" aria-label="{{ i18n "Search" }}" maxlength="64" data-hotkeys="s/" />
-  <div class="book-search-spinner hidden"></div>
-  <ul id="book-search-results"></ul>
-</div>
---->
+<!--<div class="book-search">-->
+<!--  <input type="text" id="book-search-input" placeholder="{{ i18n "Search" }}" aria-label="{{ i18n "Search" }}" maxlength="64" data-hotkeys="s/" />-->
+<!--  <div class="book-search-spinner hidden"></div>-->
+<!--  <ul id="book-search-results"></ul>-->
+<!--</div>-->
+
 {{ end }}
