@@ -24,32 +24,45 @@ hugo提供了通过主题构建网站的机制。hugo生态已经提供了300+�
 
 ## Quick Start
 
+
+- Step 1: Setup wls2 network for windows （Skip if Linux or Mac OS)
+
 ```bash
-mkdir -p ${project}/themes
-cd ${project}
+# Win10 所在局域网设备访问 WSL2
+PS C:\WINDOWS\system32> wsl -- hostname -I
 
-git init
-git submodule add --force  https://github.com/airdb-wiki/hugo-book  themes/book
+# Windows 监听 8080，转发到 WSL2 8080
+PS C:\WINDOWS\system32> netsh interface portproxy add v4tov4 listenport=1313 connectaddress=172.23.232.213 connectport=1313
 
-cp -pr themes/book/exampleSite/ .
-
-git add  .
-git commit -a -m"first commit"
-
-hugo server --minify --theme book
+# Windows 放行 8080 入站
+C:\WINDOWS\system32> New-NetFirewallRule -DisplayName "Allow Inbound TCP Port 1313" -Direction Inbound -Action Allow -Protocol TCP -LocalPort 1313
 ```
 
-## Makefile
+参考：[Win10 与 WSL2 间的网络和文件互访](https://logi.im/script/achieving-access-to-files-and-resources-on-the-network-between-win10-and-wsl2.html)
+
+
+
+- Step: Install Hugo 
+
+下载地址：
+https://github.com/gohugoio/hugo/releases/latest
 
 ```bash
-.PHONY: test
+wget https://github.com/gohugoio/hugo/releases/download/v0.84.1/hugo_extended_0.84.1_Linux-64bit.deb
 
-all: run
-run:
-        hugo server --minify --theme book
-sub:
-        git submodule update --init
-        git submodule update --remote
-build:
-        hugo -D --minify
+dpkg -i hugo_extended_0.84.1_Linux-64bit.deb
+
+```
+
+
+- Step 3: Create project
+
+```bash
+git clone https://github.com/airdb-wiki/hugo-book 
+
+make create $(project)
+
+cd ../$(project)
+
+make
 ```
